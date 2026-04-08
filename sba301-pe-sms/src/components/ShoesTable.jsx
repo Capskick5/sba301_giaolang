@@ -1,8 +1,15 @@
-
+/**
+ * Mục đích file:
+ * - Hiển thị bảng danh sách shoes và cụm action.
+ * - Tách riêng để page danh sách ngắn gọn, dễ đọc.
+ */
 import { Button, Table } from 'react-bootstrap';
 
 export default function ShoesTable({ shoes, pageInfo, onView, onEdit, onDelete }) {
-
+  /**
+   * Tính số thứ tự theo trang hiện tại.
+   * Ví dụ: trang 2, size 5 thì dòng đầu tiên sẽ là 6.
+   */
   const startIndex = pageInfo.currentPage * pageInfo.pageSize;
 
   return (

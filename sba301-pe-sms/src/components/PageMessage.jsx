@@ -1,3 +1,8 @@
+/**
+ * Mục đích file:
+ * - Hiển thị loading hoặc lỗi theo dạng Alert Bootstrap.
+ * - Dùng lại ở nhiều màn hình để code gọn hơn.
+ */
 import { Alert, Spinner } from 'react-bootstrap';
 
 export default function PageMessage({ loading, error }) {
@@ -10,6 +15,7 @@ export default function PageMessage({ loading, error }) {
     );
   }
 
+  /** Nếu có lỗi thì hiện thông báo lỗi. */
   if (error) {
     return <Alert variant="danger">{error}</Alert>;
   }

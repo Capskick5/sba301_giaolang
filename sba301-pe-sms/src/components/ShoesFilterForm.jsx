@@ -1,4 +1,8 @@
-
+/**
+ * Mục đích file:
+ * - Hiển thị vùng filter ở màn hình danh sách shoes.
+ * - Chỉ xử lý giao diện nhập filter, việc gọi API do page cha phụ trách.
+ */
 import { Button, Col, Form, Row } from 'react-bootstrap';
 
 export default function ShoesFilterForm({
@@ -8,6 +12,7 @@ export default function ShoesFilterForm({
   onFilter,
   onAddNew,
 }) {
+  /** Form filter theo category và shoes name đúng bố cục đề thi. */
   return (
     <div className="mb-4">
       <h4 className="fw-bold mb-4">Shoes List</h4>

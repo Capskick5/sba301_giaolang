@@ -1,4 +1,8 @@
-
+/**
+ * Mục đích file:
+ * - Hiển thị thanh phân trang đơn giản giống đề thi.
+ * - Không cho người dùng chọn size/sort trên UI, chỉ điều hướng trang.
+ */
 import { Col, Pagination, Row } from 'react-bootstrap';
 
 export default function ShoesPagination({ pageInfo, onPageChange }) {
